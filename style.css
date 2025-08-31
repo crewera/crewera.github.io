@@ -1,9 +1,10 @@
+/* 기본 설정 */
 :root {
-    --bg-color: #2e2e2e;
-    --text-color: #ffffff;
-    --gray-text-color: #b0b0b0;
-    --border-color: #4a4a4a;
-    --accent-color: #6a96e7;
+    --bg-color: #2c3e50; /* 짙은 남색-청록색 계열 배경 */
+    --text-color: #ecf0f1; /* 밝은 회색 폰트 */
+    --gray-text-color: #bdc3c7; /* 중간 톤 회색 */
+    --border-color: #34495e; /* 배경보다 약간 어두운 경계선 */
+    --accent-color: #1abc9c; /* 청록색 강조 색상 */
 }
 
 body {
@@ -89,97 +90,4 @@ body {
 }
 
 .company-name {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--gray-text-color);
-    margin-bottom: 10px;
-}
-
-.company-intro {
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--gray-text-color);
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
-
-.web-info {
-    font-size: 0.9rem;
-    color: #999;
-}
-
-.web-info .web-link {
-    display: inline-block;
-    color: #fff;
-    background-color: #666;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-left: 10px;
-    font-size: 0.8rem;
-}
-
-.info-section {
-    padding: 50px 0 100px;
-    border-top: 1px solid var(--border-color);
-}
-
-.info-text {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    color: var(--gray-text-color);
-    margin-bottom: 40px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 15px;
-}
-
-.info-item {
-    display: contents;
-}
-
-.info-label {
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.info-value {
-    color: var(--gray-text-color);
-}
-
-.footer {
-    text-align: center;
-    padding: 30px 0;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.8rem;
-    color: #666;
-}
-
-@media (max-width: 768px) {
-    .header .container {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-    .nav {
-        margin-top: 10px;
-    }
-    .nav a {
-        margin: 0 10px;
-    }
-    .section-heading {
-        font-size: 1.5rem;
-    }
-    .info-grid {
-        display: block;
-    }
-    .info-item .info-label {
-        display: inline-block;
-        width: 100px;
-    }
-    .info-item .info-value {
-        display: inline;
-    }
-}
+    font-size: 1.5rem
