@@ -228,3 +228,99 @@ body {
         display: inline;
     }
 }
+
+/* 주요 인력 섹션 */
+.team-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: var(--gray-text-color);
+    margin-bottom: 60px;
+}
+
+/* 대표(CEO) 스타일 */
+.ceo-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05); /* 약간의 배경색으로 돋보이게 함 */
+}
+
+.ceo-member .member-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.ceo-info {
+    text-align: center;
+}
+
+/* 대표와 직원 섹션을 구분하는 선 */
+.separator {
+    width: 80px;
+    height: 2px;
+    background-color: var(--border-color);
+    margin: 0 auto 60px;
+}
+
+/* 직원 4명 스타일 */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-member .member-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.member-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.member-position {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.member-bio {
+    font-size: 0.8rem;
+    color: var(--gray-text-color);
+    line-height: 1.5;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .ceo-member {
+        padding: 20px;
+    }
+    .ceo-member .member-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
