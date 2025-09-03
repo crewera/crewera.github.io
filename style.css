@@ -31,11 +31,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.logo-img {
-    width: 150px;  /* 가로 너비를 150px로 설정 */
-    height: auto;  /* 세로 높이는 비율에 맞춰 자동 조절 */
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
