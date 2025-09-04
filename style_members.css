@@ -61,8 +61,9 @@ body {
 
 /* Main Content Padding (헤더 높이만큼 여백) */
 .main-content {
-    padding-top: 80px; /* 헤더 높이 고려하여 충분히 여백 확보 */
+    padding-top: 50px; /* 헤더 높이 고려하여 충분히 여백 확보 */
 }
+
 
 /* 공통 섹션 제목 스타일 */
 .section-title {
