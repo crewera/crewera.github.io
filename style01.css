@@ -54,16 +54,17 @@ body {
   margin: 0;
 }
 
-.nav a {
-  color: #555;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 14px;
-  transition: color 0.3s ease;
+.nav {
+    display: flex; /* Flexbox를 활성화하여 자식 요소들을 유연하게 배치 */
+    /* justify-content: flex-end; */ /* 이 줄을 추가하여 링크를 오른쪽으로 정렬 */
+    /* justify-content: space-between; */ /* 이 줄을 추가하여 링크 간격을 균등하게 분배 */
 }
 
-.nav a:hover {
-  color: var(--accent-color);
+.nav a {
+    padding: 0 15px; /* 링크 좌우에 패딩을 주어 간격을 넓힘 */
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333; /* 링크 색상 설정 */
+    font-weight: 500; /* 글자 두께 설정 */
 }
 
 /* --- 3. 메인 콘텐츠 (페이지별 스타일) --- */
