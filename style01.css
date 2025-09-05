@@ -296,15 +296,16 @@ body {
   margin-bottom: 50px;
 }
 
+/* project-item 클래스에 Flexbox 적용 */
 .project-item {
-  display: flex;
-  align-items: center;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease;
+    display: flex; /* 자식 요소들을 가로로 나란히 정렬합니다. */
+    align-items: center; /* 자식 요소들을 세로 중앙에 정렬합니다. */
+    gap: 20px; /* 이미지와 텍스트 사이에 간격을 줍니다. (필요에 따라 조절) */
+    padding: 30px; /* 아이템 내부에 여백을 줍니다. */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .project-item:hover {
@@ -321,12 +322,31 @@ body {
   flex-direction: row-reverse;
 }
 
+/* 텍스트 내용 컨테이너에 Flexbox를 적용하여 내용을 유연하게 만듭니다. */
 .project-content {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 60%;
+    display: flex;
+    flex-direction: column; /* 내용을 세로로 정렬합니다. */
+    justify-content: space-between; /* 내용과 푸터 사이의 간격을 조절합니다. */
+    flex-grow: 1; /* 남은 공간을 채우도록 합니다. */
+}
+
+/* 이미지와 텍스트 순서를 교체하기 위한 설정 */
+/* 홀수 번째 .project-section의 .project-item에 적용 (CSS 의사 클래스 nth-child(odd) 활용) */
+.project-section:nth-child(odd) .project-item {
+    flex-direction: row; /* 기본 정렬 방향을 유지합니다. (이미지 - 텍스트 순) */
+}
+
+/* 짝수 번째 .project-section의 .project-item에 적용 */
+.project-section:nth-child(even) .project-item {
+    flex-direction: row-reverse; /* 순서를 반대로 바꿉니다. (텍스트 - 이미지 순) */
+}
+
+/* 이미지 크기 조절 */
+.project-item img {
+    width: 40%; /* 이미지 너비를 40%로 설정합니다. */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .project-content h3 {
@@ -403,13 +423,12 @@ body {
   .team-grid {
     grid-template-columns: 1fr; /* 모바일에서는 1열로 변경 */
   }
-  .project-item,
-  .project-item:nth-child(even) {
-    flex-direction: column;
-  }
-  .project-item img,
-  .project-content {
-    width: 100%;
-    height: auto;
-  }
+    .project-item {
+        flex-direction: column; /* 이미지를 위에, 텍스트를 아래에 배치합니다. */
+    }
+
+    .project-item img {
+        width: 100%; /* 이미지를 가로 전체 너비로 늘립니다. */
+        margin-bottom: 15px;
+    }
 }
