@@ -47,6 +47,17 @@ body {
   padding: 15px 20px;
 }
 
+/* 로고와 텍스트를 함께 묶어 정렬 */
+.header .logo-group {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 40px; /* 로고 이미지 크기 조절 */
+    margin-right: 10px; /* 로고와 텍스트 사이 간격 */
+}
+
 .logo {
   font-size: 1.5em;
   font-weight: 700;
@@ -55,16 +66,22 @@ body {
 }
 
 .nav {
-    display: flex; /* Flexbox를 활성화하여 자식 요소들을 유연하게 배치 */
-    /* justify-content: flex-end; */ /* 이 줄을 추가하여 링크를 오른쪽으로 정렬 */
-    /* justify-content: space-between; */ /* 이 줄을 추가하여 링크 간격을 균등하게 분배 */
+  display: flex;
+  /* `justify-content` 속성은 .nav의 부모 요소에 적용하는 것이 더 좋습니다. */
+  /* 여기서는 .header .container에 이미 적용되어 있어 추가할 필요 없습니다. */
 }
 
 .nav a {
-    padding: 0 15px; /* 링크 좌우에 패딩을 주어 간격을 넓힘 */
-    text-decoration: none; /* 밑줄 제거 */
-    color: #333; /* 링크 색상 설정 */
-    font-weight: 500; /* 글자 두께 설정 */
+  padding: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--accent-color); /* 호버 시 색상 변경 */
 }
 
 /* --- 3. 메인 콘텐츠 (페이지별 스타일) --- */
