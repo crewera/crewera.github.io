@@ -69,12 +69,11 @@ body {
 }
 
 .nav a {
-  padding: 0 15px;
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  white-space: nowrap;
-  transition: color 0.3s;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
