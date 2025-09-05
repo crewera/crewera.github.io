@@ -7,20 +7,20 @@
 
 /* --- 1. 기본 설정 (variables, reset, common) --- */
 :root {
-  --bg-color: #f5f5f5; /* 아주 밝은 회색 배경 */
-  --text-color: #333; /* 어두운 회색 폰트 */
-  --gray-text-color: #777; /* 중간 톤의 회색 */
-  --border-color: #ddd; /* 밝은 회색 경계선 */
-  --accent-color: #1abc9c; /* 청록색 강조 색상 */
-  --accent-color-light: #007bff; /* 프로젝트 페이지 강조 색상 */
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --gray-text-color: #777;
+  --border-color: #ddd;
+  --accent-color: #1abc9c;
+  --accent-color-light: #007bff;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.6;
-  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,48 +47,45 @@ body {
   padding: 15px 20px;
 }
 
-/* 로고와 텍스트를 함께 묶어 정렬 */
 .header .logo-group {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header img {
-    height: 40px; /* 로고 이미지 크기 조절 */
-    margin-right: 10px; /* 로고와 텍스트 사이 간격 */
+  height: 40px;
+  margin-right: 10px;
 }
 
 .logo {
   font-size: 1.5em;
   font-weight: 700;
-  color: #333;
+  color: var(--text-color);
   margin: 0;
 }
 
 .nav {
   display: flex;
-  /* `justify-content` 속성은 .nav의 부모 요소에 적용하는 것이 더 좋습니다. */
-  /* 여기서는 .header .container에 이미 적용되어 있어 추가할 필요 없습니다. */
 }
 
 .nav a {
   padding: 0 15px;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
-  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+  white-space: nowrap;
   transition: color 0.3s;
 }
 
 .nav a:hover {
-  color: var(--accent-color); /* 호버 시 색상 변경 */
+  color: var(--accent-color);
 }
 
-/* --- 3. 메인 콘텐츠 (페이지별 스타일) --- */
+/* --- 3. 메인 콘텐츠 --- */
 
-/* index.html (메인 페이지) 스타일 */
+/* index.html (메인 페이지) */
 .main-content {
-  padding-top: 100px; /* 헤더 높이만큼 여백 */
+  padding-top: 100px;
 }
 
 .hero-section {
@@ -101,10 +98,7 @@ body {
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
 }
 
 .text-section {
@@ -177,10 +171,6 @@ body {
   gap: 15px;
 }
 
-.info-item {
-  display: contents;
-}
-
 .info-label {
   font-weight: 500;
   color: var(--text-color);
@@ -190,11 +180,10 @@ body {
   color: var(--gray-text-color);
 }
 
-
-/* style_members.css (팀원 소개 페이지) 스타일 */
+/* 팀원 소개 페이지 */
 .members-section,
 .projects-section {
-  padding-top: 100px; /* 헤더 여백 */
+  padding-top: 100px;
 }
 
 .section-title {
@@ -307,22 +296,21 @@ body {
   line-height: 1.5;
 }
 
-
-/* style_projects.css (프로젝트 페이지) 스타일 */
+/* 프로젝트 페이지 */
 .project-section {
   margin-bottom: 50px;
 }
 
-/* project-item 클래스에 Flexbox 적용 */
 .project-item {
-    display: flex; /* 자식 요소들을 가로로 나란히 정렬합니다. */
-    align-items: center; /* 자식 요소들을 세로 중앙에 정렬합니다. */
-    gap: 20px; /* 이미지와 텍스트 사이에 간격을 줍니다. (필요에 따라 조절) */
-    padding: 30px; /* 아이템 내부에 여백을 줍니다. */
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .project-item:hover {
@@ -331,7 +319,8 @@ body {
 
 .project-item img {
   width: 40%;
-  height: 300px;
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -339,31 +328,11 @@ body {
   flex-direction: row-reverse;
 }
 
-/* 텍스트 내용 컨테이너에 Flexbox를 적용하여 내용을 유연하게 만듭니다. */
 .project-content {
-    display: flex;
-    flex-direction: column; /* 내용을 세로로 정렬합니다. */
-    justify-content: space-between; /* 내용과 푸터 사이의 간격을 조절합니다. */
-    flex-grow: 1; /* 남은 공간을 채우도록 합니다. */
-}
-
-/* 이미지와 텍스트 순서를 교체하기 위한 설정 */
-/* 홀수 번째 .project-section의 .project-item에 적용 (CSS 의사 클래스 nth-child(odd) 활용) */
-.project-section:nth-child(odd) .project-item {
-    flex-direction: row; /* 기본 정렬 방향을 유지합니다. (이미지 - 텍스트 순) */
-}
-
-/* 짝수 번째 .project-section의 .project-item에 적용 */
-.project-section:nth-child(even) .project-item {
-    flex-direction: row-reverse; /* 순서를 반대로 바꿉니다. (텍스트 - 이미지 순) */
-}
-
-/* 이미지 크기 조절 */
-.project-item img {
-    width: 40%; /* 이미지 너비를 40%로 설정합니다. */
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .project-content h3 {
@@ -391,7 +360,6 @@ body {
   font-weight: 500;
 }
 
-
 /* --- 4. 푸터 --- */
 .footer {
   text-align: center;
@@ -415,7 +383,7 @@ body {
   color: #999;
 }
 
-/* --- 5. 미디어 쿼리 (반응형) --- */
+/* --- 5. 반응형 --- */
 @media (max-width: 768px) {
   .header .container {
     flex-direction: column;
@@ -438,14 +406,13 @@ body {
     height: 150px;
   }
   .team-grid {
-    grid-template-columns: 1fr; /* 모바일에서는 1열로 변경 */
+    grid-template-columns: 1fr;
   }
-    .project-item {
-        flex-direction: column; /* 이미지를 위에, 텍스트를 아래에 배치합니다. */
-    }
-
-    .project-item img {
-        width: 100%; /* 이미지를 가로 전체 너비로 늘립니다. */
-        margin-bottom: 15px;
-    }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-item img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
