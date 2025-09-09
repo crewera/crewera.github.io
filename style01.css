@@ -165,14 +165,20 @@ body {
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 항목 간 간격 조정 */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
 }
 
 .info-label {
-  font-weight: 500;
-  color: var(--text-color);
+    min-width: 80px; /* 레이블의 최소 너비를 지정하여 정렬 */
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .info-value {
