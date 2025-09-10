@@ -165,24 +165,33 @@ body {
 }
 
 .info-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* 항목 간 간격 조정 */
+    display: grid;
+    grid-template-columns: 1fr; /* 모바일 우선 */
+    gap: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding: 5px 0;
 }
 
 .info-label {
-    min-width: 80px; /* 레이블의 최소 너비를 지정하여 정렬 */
+    flex-shrink: 0;
     font-weight: 500;
-    color: var(--text-color);
+    min-width: 100px; /* 라벨 너비 고정 */
+    margin-right: 15px; /* 라벨과 값 사이 간격 */
 }
 
 .info-value {
-  color: var(--gray-text-color);
+    flex-grow: 1;
+    font-weight: 300;
 }
 
 /* 팀원 소개 페이지 */
