@@ -178,7 +178,7 @@ body {
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: baseline; /* flex-start 또는 center 대신 baseline 사용 */
     align-self: flex-start;
     padding: 5px 0;
 }
