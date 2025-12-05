@@ -33,9 +33,24 @@
 </header>
 
     <div class="main-content">
-        <section class="hero-section" style="background-image: url('./hero_image.png');">
-            <div class="hero-overlay"></div>
-        </section>
+<section class="hero-section">
+    <div class="slider-container">
+        <div class="slide fade" style="background-image: url('./hero_image_01.jpg');"></div>
+        <div class="slide fade" style="background-image: url('./hero_image_02.png');"></div>
+        <div class="slide fade" style="background-image: url('./hero_image_03.png');"></div>
+    </div>
+    
+    <div class="hero-overlay"></div>
+
+    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</section>
 
         <section class="text-section container">
             <h3 class="section-heading">주식회사 올리그메드는<br> 산·학·연 기반으로 특수의료용도식품 및 <br>건강기능식품 원료개발을 하는 <br> 기술 집약형 바이오 스타트업입니다.</h3>
@@ -99,6 +114,7 @@
 </html>
 </body>
 </html>
+
 
 
 
