@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>올리그메드 OLIGMED</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta name="description" content="주식회사 올리그메드">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="올리그메드">
+    <meta property="og:description" content="주식회사 올리그메드">
+    <meta property="og:image" content="http://www.oligmed.com/oligmed_logo_nobg.png">
+    <meta property="og:url" content="http://www.oligmed.com">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo-group">
+                <img src="oligmed_logo_nobg.png" alt="올리그메드 로고">
+                <h1 class="logo">올리그메드 Oligmed</h1>
+            </div>
+            <nav class="nav">
+                <a href="#about">회사소개</a>
+                <a href="#team">멤버소개</a>
+                <a href="#projects">사업성과</a>
+                <a href="#ip">지적재산권</a>
+                <a href="en/index.html" style="font-weight:bold; color:#0056b3;">EN</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        
+        <section id="about">
+            <div class="hero-section">
+                <div class="slider-container">
+                    <div class="slide fade" style="background-image: url('./hero_image_01.jpg');"></div>
+                    <div class="slide fade" style="background-image: url('./hero_image_02.png');"></div>
+                    <div class="slide fade" style="background-image: url('./hero_image_03.png');"></div>
+                </div>
+                
+                <div class="hero-overlay"></div>
+
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            <div class="text-section container">
+                <h3 class="section-heading">주식회사 올리그메드는<br> 산·학·연 기반으로 특수의료용도식품 및 <br>건강기능식품 원료개발을 하는 <br> 기술 집약형 바이오 스타트업입니다.</h3>
+                <p class="company-intro">2025년 설립된 올리그메드는<br> 식·약 공용 천연물을 기반으로 <br> 식욕, 근력기능, 통증 및 인지장애 조절 원료를<br> 개발하고 있습니다.</p>
+            </div>
+
+            <div class="info-section container">
+                <p class="info-text">
+                    주식회사 올리그메드 소개
+                </p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">CEO</span>
+                        <span class="info-value">김우진 Ph.D, MD(KM)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">임직원</span>
+                        <span class="info-value">5명 (Ph.D 2명)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">사업영역</span>
+                        <span class="info-value">특수의료용도식품 및 건강기능식품 원료개발</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">연구실</span>
+                        <span class="info-value"><a href="http://neolab.khu.ac.kr" target="_blank">경희대학교 NeoLab</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">이메일</span>
+                        <span class="info-value"><a href="mailto:contact@oligmed.com">contact@oligmed.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h3 class="section-title">주요 인력</h3>
+                <p class="section-description">
+                    각 분야의 전문성을 바탕으로 혁신적인 성과를 만들어가는 올리그메드의 인재들입니다.
+                </p>
+                
+                <div class="ceo-member">
+                    <img src="KWJ.jpg" alt="대표 사진" class="member-photo">
+                    <div class="ceo-info">
+                        <h4 class="member-name">김우진 대표</h4>
+                        <p class="member-position">대표이사 (CEO)</p>
+                        <p class="member-bio">
+                            경희대학교 한의과대학<br> 생리학교실 부교수<br>
+                            한의사<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="PKT.jpg" alt="직원 사진" class="member-photo">
+                        <h4 class="member-name">박근태</h4>
+                        <p class="member-position">팀장</p>
+                        <p class="member-bio">
+                            경희대학교 한의과대학<br> 생리학교실 연구교수
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="JYJ.jpg" alt="직원 사진" class="member-photo">
+                        <h4 class="member-name">전용재</h4>
+                        <p class="member-position">팀원</p>
+                        <p class="member-bio">
+                            경희대학교 한의과대학<br> 생리학교실 연구조교
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="JHJ.jpg" alt="직원 사진" class="member-photo">
+                        <h4 class="member-name">조희준</h4>
+                        <p class="member-position">팀원</p>
+                        <p class="member-bio">
+                            경희대학교 한의과대학<br> 생리학교실 연구조교
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="LJC.jpg" alt="직원 사진" class="member-photo">
+                        <h4 class="member-name">이재철</h4>
+                        <p class="member-position">팀원</p>
+                        <p class="member-bio">
+                            경희대학교 한의과대학<br> 생리학교실 박사과정<br>
+                            KAIST 기술경영전문대학원 공학석사<br>
+                            한의사
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="projects" class="container">
+            <h3 class="section-title" style="text-align: center;">올리그메드가 하고 있는 일</h3>
+            <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">
+                올리그메드는 혁신적인 연구 개발과 글로벌 파트너십을 통해 끊임없이 성장하고 있습니다.<br>
+                우리의 주요 성과와 미래를 위한 프로젝트를 소개합니다.
+            </p>
+
+            <div class="project-section">
+                <div class="project-item">
+                     <img src="khudemoday.jpg" alt="KHU 데모데이 최우수상 수상">
+                    <div class="project-content">
+                        <div>
+                            <h3>KHU DemoDay 최우수상 수상</h3>
+                            <p>
+                                경희대학교 기술지주가 주관한 교내 스타트업 발표에서
+                                김우진 대표님이 발표한 올리그메드가 최우수상을 수상했습니다.
+                                기술력과 마케팅 모두를 아우르는 경쟁력을 확보하도록 하겠습니다.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>대회수상</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-section">
+                <div class="project-item">
+                     <img src="hero_image_03.png" alt="KHUBI 홍보 영상 촬영">
+                    <div class="project-content">
+                        <div>
+                            <h3>올리그메드 홍보영상 제작</h3>
+                            <p>
+                                경희대학교 서울 창업보육센터(KHUBI)의 지원으로 제작된 올리그메드의 홍보 영상입니다.<br>
+                                김우진 대표님이 직접 출연하여 천연물 연구 기반의 식욕 부진 개선 솔루션과 비전을 소개합니다.
+                                <br><br>
+                                <a href="https://www.youtube.com/watch?v=tsLN0vewieM" target="_blank" style="text-decoration: underline; color: #0066cc; font-weight: bold;">
+                                    📺 홍보영상 보러가기 (YouTube)
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>홍보활동</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-section">
+                <div class="project-item">
+                      <img src="KWJ_IPNP_02.jpg" alt="프랑스 공동연구 미팅 이미지">
+                    <div class="project-content">
+                        <div>
+                            <h3>프랑스 공동연구팀과 소재 개발 및 사업화 논의</h3>
+                            <p>
+                                프랑스 공동연구팀과 만나 신규 소재 개발 및 사업화를 위한 전략 회의를 진행했습니다.
+                                양사의 기술력과 노하우를 결합하여 혁신적인 소재를 개발하고,
+                                이를 활용한 신제품 출시를 통해 글로벌 시장 경쟁력을 확보할 것입니다.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>국제연구</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="image01.jpg" alt="Station F 미팅 이미지">
+                    <div class="project-content">
+                        <div>
+                            <h3>프랑스 진출 가속화: Station F 입주 논의 및 박람회 참여</h3>
+                            <p>
+                                프랑스 시장 진출을 위한 중요한 첫걸음으로, 현지 파견 중인 중소벤처기업진흥공단과 미팅을 가졌습니다.
+                                프랑스 최대 스타트업 허브인 <b>'Station F'</b> 입주 가능성을 논의하며 프랑스 내 거점을 마련할 계획입니다.
+                                또한 11월에 개최되는 현지 제품 박람회에 참가하여 올리그메드의 기술력을 선보일 예정입니다.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>해외판매</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-section">
+                <div class="project-item">
+                     <img src="mou.png" alt="미라큘러스 MOU 이미지">
+                    <div class="project-content">
+                        <div>
+                            <h3>RWE 기반 검증을 위한 미라큘러스 업무협약</h3>
+                            <p>
+                                올리그메드는 임상 시험 수탁 기관(CRO)인 미라큘러스(Miraculus)와 실사용 데이터(RWE, Real-World Evidence) 기반 검증을 위한 업무 협약(MOU)을 체결했습니다.
+                                이번 협약을 통해 올리그메드는 미라큘러스와 함께 제품의 효능과 안전성을 입증할 과학적 근거를 확보하고, 신뢰도 높은 제품 정보를 소비자에게 제공할 계획입니다.
+                                앞으로 양사는 긴밀한 협력을 바탕으로 성공적인 연구를 진행하여 더 나은 제품 개발에 기여하겠습니다.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>연구개발</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="image02.jpg" alt="인플루언서 미팅 이미지">
+                    <div class="project-content">
+                        <div>
+                            <h3>76만 인플루언서와 제품 홍보 협의</h3>
+                            <p>
+                                한국과 동남아시아에서 막강한 영향력을 가진 76만 팔로워의 인플루언서와
+                                향후 제품 홍보에 대한 심도 깊은 미팅을 진행했습니다.
+                                이번 협의를 통해 동남아 시장에서의 브랜드 인지도를 강화하고,
+                                더 많은 고객에게 올리그메드의 우수한 제품을 알릴 수 있는 발판을 마련했습니다.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>홍보활동</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="ip" class="container" style="margin-bottom: 80px;">
+            <h3 class="section-title" style="text-align: center;">독점적인 기술력과 지적재산권</h3>
+            <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">
+                올리그메드는 혁신적인 연구 개발을 통해 독점적인 기술을 확보하고,<br>
+                이를 특허권 및 상표권으로 보호하여 글로벌 시장 경쟁력을 강화하고 있습니다.<br>
+                우리의 핵심 지적재산권 현황과 가치를 소개합니다.
+            </p>
+    
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="jsd.jpg" alt="상표권 출원">
+                    <div class="project-content">
+                        <div>
+                            <h3>상표권 출원 (출원번호: 40-2025-0165152)</h3>
+                            <p>
+                                증생담
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>상표권</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="patent_icon_02.png" alt="특허출원">
+                    <div class="project-content">
+                        <div>
+                            <h3>특허 출원 (출원번호: 10-2025-0125012)</h3>
+                            <p>
+                                영양소 흡수 개선용 증숙생강 복령 추출물의 제조방법 및 이의 용도
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>특허</small>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info-grid">
+                <div class="info-item">
+                    <span class="info-label">등록번호</span>
+                    <span class="info-value">231-87-03510</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">법인명</span>
+                    <span class="info-value">주식회사 올리그메드</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">대표자</span>
+                    <span class="info-value">김우진</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">사업장 소재지</span>
+                    <span class="info-value">서울특별시 동대문구 회기로 111, 4층 403호 홍릉바이오의료창업센터(회기동, 회기동 빌딩)</span>
+                </div>
+            </div>
+            <br>
+            <p class="copyright">&copy; 2025 주식회사 올리그메드. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
