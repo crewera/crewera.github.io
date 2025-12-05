@@ -1,1 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLIGMED - Bio-Startup</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.ico">
+    
+    <meta property="og:title" content="Oligmed">
+    <meta property="og:description" content="Innovative Bio-Startup for FSMP & Nutraceuticals">
+    <meta property="og:image" content="http://www.oligmed.com/oligmed_logo_nobg.png">
+</head>
+<body>
 
+    <header class="header">
+        <div class="container">
+            <div class="logo-group">
+                <img src="../oligmed_logo_nobg.png" alt="Oligmed Logo">
+                <h1 class="logo">Oligmed</h1>
+            </div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#projects">Achievements</a>
+                <a href="#ip">IP</a>
+                <a href="../index.html" style="font-weight:bold; color:#0056b3;">KR</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        
+        <section id="about">
+            <div class="hero-section">
+                <div class="slider-container">
+                    <div class="slide fade" style="background-image: url('../hero_image_01.jpg');"></div>
+                    <div class="slide fade" style="background-image: url('../hero_image_02.png');"></div>
+                    <div class="slide fade" style="background-image: url('../hero_image_03.png');"></div>
+                </div>
+                
+                <div class="hero-overlay"></div>
+            
+                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            <div class="text-section container">
+                <h3 class="section-heading">
+                    Oligmed is a technology-intensive bio-startup<br>
+                    developing ingredients for FSMP and Nutraceuticals<br>
+                    based on Industry-Academic-Research collaboration.
+                </h3>
+                <p class="company-intro">
+                    Founded in 2025, Oligmed develops raw materials<br>
+                    based on edible & medicinal natural products<br>
+                    to target appetite regulation, muscle function, pain relief, and cognitive disorders.
+                </p>
+            </div>
+
+            <div class="info-section container">
+                <p class="info-text">Company Overview</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">CEO</span>
+                        <span class="info-value">Kim Woo-jin Ph.D, MD(KM)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Employees</span>
+                        <span class="info-value">5 (2 Ph.Ds)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Business Area</span>
+                        <span class="info-value">FSMP(Foods for Special Medical Purposes) & Nutraceuticals Development</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Lab</span>
+                        <span class="info-value"><a href="http://neolab.khu.ac.kr" target="_blank">Kyung Hee Univ. NeoLab</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email</span>
+                        <span class="info-value"><a href="mailto:contact@oligmed.com">contact@oligmed.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h3 class="section-title">Leadership & Team</h3>
+                <p class="section-description">
+                    Innovators creating results through specialized expertise.
+                </p>
+                
+                <div class="ceo-member">
+                    <img src="../KWJ.jpg" alt="CEO Photo" class="member-photo">
+                    <div class="ceo-info">
+                        <h4 class="member-name">Kim Woo-jin</h4>
+                        <p class="member-position">CEO / Founder</p>
+                        <p class="member-bio">
+                            Associate Professor, Dept. of Physiology, KHU<br>
+                            College of Korean Medicine<br>
+                            KMD (Doctor of Korean Medicine), Ph.D.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="../PKT.jpg" alt="Team Member" class="member-photo">
+                        <h4 class="member-name">Park Keun-tae</h4>
+                        <p class="member-position">Team Leader</p>
+                        <p class="member-bio">
+                            Research Professor,<br>Dept. of Physiology, KHU
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../JYJ.jpg" alt="Team Member" class="member-photo">
+                        <h4 class="member-name">Jeon Yong-jae</h4>
+                        <p class="member-position">Researcher</p>
+                        <p class="member-bio">
+                            Teaching Assistant,<br>Dept. of Physiology, KHU
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../JHJ.jpg" alt="Team Member" class="member-photo">
+                        <h4 class="member-name">Jo Hee-jun</h4>
+                        <p class="member-position">Researcher</p>
+                        <p class="member-bio">
+                            Teaching Assistant,<br>Dept. of Physiology, KHU
+                        </p>
+                    </div>
+                    <div class="team-member">
+                        <img src="../LJC.jpg" alt="Team Member" class="member-photo">
+                        <h4 class="member-name">Lee Jae-cheol</h4>
+                        <p class="member-position">Researcher</p>
+                        <p class="member-bio">
+                            Ph.D Candidate, KHU<br>
+                            M.E., KAIST (Green Business & Policy)<br>
+                            KMD (Doctor of Korean Medicine)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="projects" class="container">
+            <h3 class="section-title" style="text-align:center; margin-bottom:10px;">Our Milestones</h3>
+            <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">
+                Key achievements and ongoing global projects.
+            </p>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../khudemoday.jpg" alt="KHU DemoDay">
+                    <div class="project-content">
+                        <div>
+                            <h3>Grand Prize at KHU DemoDay</h3>
+                            <p>
+                                Oligmed, presented by CEO Kim Woo-jin, won the Grand Prize at the startup pitch competition hosted by Kyung Hee University Technology Holdings. We are securing competitiveness in both technology and marketing.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Award</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../hero_image_03.png" alt="Promo Video">
+                    <div class="project-content">
+                        <div>
+                            <h3>Promotional Video Production</h3>
+                            <p>
+                                Supported by KHUBI (Kyung Hee Univ. Business Incubator). CEO Kim introduces our vision and solutions for anorexia based on natural product research.
+                                <br><br>
+                                <a href="https://www.youtube.com/watch?v=tsLN0vewieM" target="_blank" style="text-decoration: underline; color: #0066cc; font-weight: bold;">
+                                    📺 Watch on YouTube
+                                </a>
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>PR</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../KWJ_IPNP_02.jpg" alt="France Meeting">
+                    <div class="project-content">
+                        <div>
+                            <h3>Joint Research Discussion with French Team</h3>
+                            <p>
+                                Strategic meeting with a French joint research team to discuss new material development. We aim to secure global competitiveness by combining the technological know-how of both parties.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Global R&D</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../image01.jpg" alt="Station F">
+                    <div class="project-content">
+                        <div>
+                            <h3>France Expansion: Station F & Exhibitions</h3>
+                            <p>
+                                Discussing entry into 'Station F', the world's largest startup campus in Paris, and participating in local product exhibitions in November to showcase Oligmed's technology.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Global Sales</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../mou.png" alt="MOU">
+                    <div class="project-content">
+                        <div>
+                            <h3>MOU with Miraculus (CRO)</h3>
+                            <p>
+                                Signed an MOU with Miraculus for RWE (Real-World Evidence) based verification. We plan to secure scientific evidence for efficacy and safety to provide reliable product information.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>R&D</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../image02.jpg" alt="Influencer">
+                    <div class="project-content">
+                        <div>
+                            <h3>Marketing Partnership with Mega-Influencer</h3>
+                            <p>
+                                Discussed product promotion with an influencer (760k followers) influential in Korea and SE Asia. This sets the stage for strengthening brand awareness in the Southeast Asian market.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Marketing</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="container" style="margin: 60px auto; border: 0; border-top: 1px solid #eee;">
+
+        <section id="ip" class="container" style="margin-bottom: 80px;">
+            <h3 class="section-title" style="text-align:center;">Intellectual Property</h3>
+            <p style="text-align: center; font-size: 1.1em; color: #666; margin-bottom: 50px;">
+                Exclusive technology protected by patents and trademarks.
+            </p>
+
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../jsd.jpg" alt="Trademark">
+                    <div class="project-content">
+                        <div>
+                            <h3>Trademark Application (No. 40-2025-0165152)</h3>
+                            <p>
+                                Jeung-Saeng-Dam (증생담)
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Trademark</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="project-item">
+                    <img src="../patent_icon_02.png" alt="Patent">
+                    <div class="project-content">
+                        <div>
+                            <h3>Patent Application (No. 10-2025-0125012)</h3>
+                            <p>
+                                Method for producing steamed ginger & Poria cocos extract for improving nutrient absorption and its use.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <small>Patent</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info-grid">
+                <div class="info-item">
+                    <span class="info-label">Reg. No</span>
+                    <span class="info-value">231-87-03510</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Company</span>
+                    <span class="info-value">Oligmed Co., Ltd.</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">CEO</span>
+                    <span class="info-value">Kim Woo-jin</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Address</span>
+                    <span class="info-value">#403, 111 Hoegi-ro, Dongdaemun-gu, Seoul, Republic of Korea</span>
+                </div>
+            </div>
+            <br>
+            <p class="copyright">&copy; 2025 Oligmed Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
