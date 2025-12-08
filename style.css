@@ -629,3 +629,8 @@ body {
     color: #333;
     font-weight: 600;
 }
+
+/* 한글 텍스트가 단어 중간에 끊기지 않도록 설정 */
+.product-desc, .section-subtext, .product-features li {
+    word-break: keep-all; 
+}
