@@ -51,4 +51,5 @@ function showSlides(n) {
 // 5초마다 자동 슬라이드 (원치 않으시면 이 부분은 지우세요)
 setInterval(function() {
     moveSlide(1);
-}, 5000);
+
+}, 7000);
